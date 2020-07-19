@@ -4527,7 +4527,7 @@ p.gray {
   white-space: nowrap; }
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  content: '\e906';
+  content: '';
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;

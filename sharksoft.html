@@ -124,16 +124,16 @@
                 			<ul class="dropdown menu" data-dropdown-menu>
                 				<!-- <li><a href="https://help.pingxx.com" target="_blank" data-t="top-nav.help">帮助中心</a></li> -->
                 				<li class="is-dropdown-submenu-parent">
-                					<a href="javascript:void(0);" data-t="top-nav.devcenter">产品</a>
-                					<ul class="menu vertical">
+                					<a href="#product" data-t="top-nav.devcenter">产品</a>
+                					<!-- <ul class="menu vertical">
                 						<li>产品0</li>
                 						<li>产品1</li>
                 						<li>产品2</li>
-                					</ul>
+                					</ul> -->
                 				</li>
                 				<!-- <li><a href="https://blog.pingxx.com/" target="_blank" data-t="top-nav.help">Ping++ 博客</a></li> -->
                 				<!-- <li><a href="https://passport.pingxx.com" data-t="top-nav.login">登录</a></li> -->
-                				<li><a href="javascript:void(0);" class="button cta hollow small" data-t="top-nav.signup">联系我们</a></li>
+                				<li><a href="#contact" class="button cta hollow small" data-t="top-nav.signup">联系我们</a></li>
                 			</ul>
                 		</div>
                 	</div>
@@ -145,22 +145,22 @@
         	<ul>
         		<li>
         			<dl>
-        				<dt data-t="top-nav.features"><a>产品</a></dt>
-        				<dd><a href="javascript:;">-产品0</a></dd>
+        				<dt data-t="top-nav.features"><a href="pricing.hinge-out-from-left">产品</a></dt>
+        				<!-- <dd><a href="javascript:;">-产品0</a></dd>
         				<dd><a href="javascript:;">-产品1</a></dd>
-        				<dd><a href="javascript:;">-产品2</a></dd>
+        				<dd><a href="javascript:;">-产品2</a></dd> -->
         			</dl>
         		</li>
-        		<li class="divider"><a href="pricing.html" data-t="top-nav.pricing">定价</a></li>
+        		<!-- <li class="divider"><a href="pricing.html" data-t="top-nav.pricing">定价</a></li> -->
 
-        		<li class="divider"><a href="javascript:;" data-t="top-nav.signup">联系我们</a></li>
+        		<li class="divider"><a href="pricing.html" data-t="top-nav.signup">联系我们</a></li>
         	</ul>
         </div>
         <div class="ui-mask"></div>
         
         <section class="text-center price-title">
             <h1>定价</h1>
-            <p>选择一款适合自己的游戏代充方案</p>
+            <p id="product">选择一款适合自己的游戏代充方案</p>
             <!-- <p>游戏代充解决方案</p> -->
         </section>
         
@@ -252,7 +252,6 @@
             <div class="large-8 medium-8">
                 <div class="body-title text-center">
                     <h3>产品价格</h3>
-                    <!-- <p>推荐配合支付系统解决方案使用，也可单独购买</p> -->
                 </div>
         
                 <div class="body-info">
@@ -273,7 +272,6 @@
                             </div> -->
                             <div class="column text-center" style="flex:0.5">
                                 <p><strong>专业版</strong>
-                                    <img class="price-popular" src="assets/img/pricing/popular.svg" alt="">
                                 </p>
                                 <p>6,888元/ <span>年</span></p>
                                 <!-- <a href="javascript:;" class="button cta hollow consult">咨询购买</a> -->
@@ -323,7 +321,7 @@
                                 贴身服务
                             </div>
                         </div>
-                        <div class="row large-up-5">
+                        <div class="row large-up-5" id="contact">
                             <div class="column table-label">
                                 交易并发
                             </div>
@@ -335,10 +333,14 @@
                             </div>
                         </div>
                     </div>
-        
-                    <!--<p class="price-ad">-->
-                        <!--如果上述产品均不适合您，我们还提供广告版-->
-                    <!--</p>-->
+                </div>
+            </div>
+        </section>
+
+        <section class="row align-center pricing-body hide-for-small-only">
+            <div class="large-8 medium-8">
+                <div class="body-title text-center">
+                    <h3>联系我们</h3>
                 </div>
             </div>
         </section>
@@ -380,7 +382,7 @@
         </section>
         
         <section class="show-for-small-only">
-            <div class="body-title-m text-center">
+            <div id="contact" class="body-title-m text-center">
                 <h3>产品价格</h3>
             </div>
             <div class="table-header-m">
@@ -393,27 +395,8 @@
                             </div>
         
                             <div class="small-6" id="slot2section" data-toggle="slot2-dropdown" data-slot="slot2">
-                                <h5>定制版 <img class="price-popular" src="assets/img/pricing/popular.svg" alt=""></h5>
+                                <h5>定制版</h5>
                                 <p>16,888起</p>
-                            </div>
-                        </div>
-        
-                        <!-- 下拉内容 -->
-                        <div class="row" id="dropdown-box">
-                            <div class="dropdown-pane tiny dropdown-price" id="slot1-dropdown" data-dropdown
-                                 data-close-on-click="true" data-slot="slot1" data-display="standard">
-                                <p data-v="trial">试用版</p>
-                                <p data-v="standard">标准版</p>
-                                <p data-v="professional">专业版</p>
-                                <p data-v="custom">定制版</p>
-                            </div>
-        
-                            <div class="dropdown-pane tiny dropdown-price" id="slot2-dropdown" data-dropdown
-                                 data-close-on-click="true" data-slot="slot2" data-display="professional">
-                                <p data-v="trial">试用版</p>
-                                <p data-v="standard">标准版</p>
-                                <p data-v="professional">专业版</p>
-                                <p data-v="custom">定制版</p>
                             </div>
                         </div>
                     </div>
@@ -473,6 +456,10 @@
                 </div>
             </div>
         </section>
+        <section class="show-for-small-only">
+                <div id="mobcontact"  class="body-title-m text-center">
+                    <h3>联系我们</h3>
+                </div>
         <footer>
         	<!-- <ul class="row">
         		<li class="large-2 medium-2 small-6 columns">
