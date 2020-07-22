@@ -4527,7 +4527,7 @@ p.gray {
   white-space: nowrap; }
 
 .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
-  content: '';
+  content: '\e906';
   font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
@@ -4577,16 +4577,17 @@ p.gray {
         color: #fff;
         background-color: #14b1d1; }
     .top-bar-wrapper.fixed2 .top-bar__logo, .top-bar-wrapper.fixed2 .countdown-logo {
-      background: url("../img/logo0.jpeg") left center no-repeat;
-      height: 16px;
+      background: url("../img/logo00.png") left center no-repeat;
+      background-size: contain;
+      height: 60px;
       width: 120px;
-      padding: 1.1rem 1rem; }
+      padding: 1.1rem 1rem;}
 
 .top-bar-left .big a {
   font-size: 1rem; }
 
 .top-bar__logo, .countdown-logo {
-  background: url("../img/logo1.png") left center no-repeat;
+  background: url("../img/logo00.png") left center no-repeat;
   background-size: contain;
   height: 60px;
   width: 120px;
@@ -8009,9 +8010,11 @@ footer.invert {
     margin-bottom: 0; }
 
 .price .table-header-m {
+  /* padding-left: 18%; */
   padding-bottom: 8px; }
 
 .price .table-section-m {
+  padding-left: 18%;
   padding-top: 32px; }
   .price .table-section-m.fixed-m {
     position: fixed;
@@ -8021,7 +8024,7 @@ footer.invert {
     box-shadow: 0 2px 3px 0 rgba(157, 197, 201, 0.5); }
 
 .price .body-section-m > div {
-  padding: 8px 32px 8px 0; }
+  padding: 8px 0px 8px 0; }
 
 .price .body-section-m h5 {
   font-weight: 600;
